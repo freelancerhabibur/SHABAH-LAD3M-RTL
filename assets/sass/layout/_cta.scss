@@ -1,0 +1,60 @@
+.cta {
+    padding: 16px 0;
+    @include lg-devices {
+        padding: 0;
+    }
+    .text-block {
+        margin-bottom: 15px;
+        @include md-devices {
+            margin-bottom: 0;
+        }
+        .icon {
+            display: none;
+            width: 120px;
+            margin-top: -18px;
+            margin-left: 50px;
+            @include lg-devices {
+                display: block;
+            }
+        }
+        h2 {
+            color: $color__gray;
+            font-family: $font-almarai-bolder;
+            margin-bottom: 5px;
+            font-size: 20px;
+            @include sm-devices {
+                font-size: 22px;
+            }
+            @include md-devices {
+                font-size: 24px;
+            }
+        }
+        p {
+            font-family: $font-almarai-bold;
+            color: $color__gray;
+        }
+    }
+    .button-block {
+        a+a {
+            margin-right: 10px;
+        }
+        img {
+            width: 120px;
+            @include sm-devices {
+                width: 150px;
+            }
+            @include md-devices {
+                width: 160px;
+            }
+            @include lg-devices {
+                width: 175px;
+            }
+            @include xl-devices {
+                width: 185px;
+            }
+            @include xxl-devices {
+                width: 200px;
+            }
+        }
+    }
+}

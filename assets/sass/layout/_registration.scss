@@ -1,0 +1,118 @@
+.member-register {
+    border-top: 6px solid #a1c7c1;
+    overflow: hidden;
+    @include xxl-devices {
+        margin-top: 130px;
+
+    }
+    .container {
+        background-color: rgba(#fffdfb, 0.5);
+        padding: 15px;
+        box-shadow: 0 0 15px 10px rgba(#532719, 0.1);
+        @include sm-devices {
+            padding: 20px;
+        }
+        @include lg-devices {
+            padding: 30px;
+        }
+        @include xxl-devices {
+            padding: 40px;
+        }
+        @include xxxl-devices {
+            padding: 60px;
+        }
+    }
+    .desclaimer {
+        margin-bottom: 30px;
+        p {
+            color: $color__gray;
+            font-family: $font-almarai-reg;
+            line-height: 2;
+        }
+    }
+    form {
+        > .row {
+            background-color: #fbf7e5;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+        .box-header {
+            background-color: #a1c7c1;
+            margin-bottom: 10px;
+            .title {
+                font-size: 16px;
+                color: $color__gray;
+                padding: 8px 15px;
+            }
+        }
+        label {
+            color: $color__gray;
+            font-family: $font-almarai-reg;
+            font-size: 18px;
+            line-height: 32px;
+        }
+        .form-control {
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid $color__gray;
+            border-radius: 0;
+            height: 40px;
+        }
+        .form-group, .input-group {
+            margin-bottom: 10px;
+        }
+        input[type=file] {
+            display: none;
+        }
+        .attachement {
+            display: flex;
+            gap: 10px;
+            label {
+                text-align: center;
+                border: 1px solid #af9b83;
+                width: calc(50% - 5px);
+                padding: 20px 20px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+        }
+        select {
+            background-image: url(../icons/caret-down.svg);
+            background-repeat: no-repeat;
+            background-position: 5px 60%;
+            background-size: 10px;
+        }
+        .endorsement {
+            h5 {
+                margin-bottom: 15px;
+            }
+            input[type=checkbox] {
+                @include width-height(20px, 20px);
+                margin-left: 5px;
+            }
+            p {
+                color: $color__gray;
+                font-family: $font-almarai-reg;
+                line-height: 2;
+                font-size: 17px;
+            }
+        }
+        .form-submit {
+            margin-top: 30px;
+            text-align: center;
+            button {
+                padding: 10px 30px;
+                border-radius: 6px;
+                border: 0;
+                background-color: $color__dark__red;
+                font-family: $font-almarai-bolder;
+                font-size: 20px;
+                &:focus {
+                    background-color: $color__dark__red;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

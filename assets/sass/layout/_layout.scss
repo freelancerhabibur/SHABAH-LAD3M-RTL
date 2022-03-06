@@ -1,0 +1,16 @@
+.container {
+    @include xl-devices {
+        max-width: 1260px;
+    }
+    @include xxl-devices {
+        max-width: 1560px;
+    }
+}
+
+@import 'hero';
+@import 'programs';
+@import 'partners';
+@import 'media';
+@import 'cta';
+@import 'registration';
+@import 'entity-details';

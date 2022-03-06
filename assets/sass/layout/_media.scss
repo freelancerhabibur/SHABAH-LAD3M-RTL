@@ -1,0 +1,165 @@
+.media {
+    padding: 40px 0;
+    margin-top: 15px;
+    @include xxl-devices {
+        padding: 40px 0 60px;
+        margin-top: 0;
+    }
+
+    .nav-tabs {
+        border: 0;
+        justify-content: center;
+
+        .nav-item {
+            & + .nav-item {
+                border-right: 1px solid $color__gray;
+            }
+        }
+        .nav-link {
+            border: 0;
+            font-family: $font-almarai-bold;
+            color: $color__gray;
+            padding: 0 15px;
+            display: block;
+            background-color: transparent;
+            transition: all 0.3s;
+            font-size: 13px;
+            @include sm-devices {
+                font-size: 15px;
+            }
+            @include md-devices {
+                font-size: 16px;
+            }
+            @include xl-devices {
+                font-size: 17px;
+            }
+            @include xxl-devices {
+                font-size: 18px;
+            }
+            &:hover, &.active {
+                color: $color__red;
+            }
+        }
+    }
+    .tab-content {
+        margin-top: 20px;
+
+        .blog {
+            .blog-item {
+                max-width: 380px;
+                margin: 0 auto;
+                @include lg-devices {
+                    max-width: 100%;
+                }
+                .thumb {
+                    overflow: hidden;
+                    img {
+                        transition: all 0.3s linear;
+                    }
+                }
+                .details {
+                    padding: 10px 0;
+                    border-bottom: 4px solid #e1d5bf;
+                    @include xl-devices {
+                        border-bottom: 8px solid #e1d5bf;
+                    }
+                    .date {
+                        color: $color__gray;
+                        font-family: $font-almarai-reg;
+                    }
+                    .blog-title {
+                        margin-top: 10px;
+                        font-family: $font-almarai-bolder;
+                        font-size: 14px;
+                        line-height: 1.7;
+                        @include xsm-devices {
+                            font-size: 16px;
+                        }
+                        @include xl-devices {
+                            font-size: 18px;
+                        }
+                        @include xxl-devices {
+                            font-size: 20px;
+                        }
+                        a {
+                            color: $color__gray;
+                        }
+                    }
+                }
+                &:hover {
+                    .thumb {
+                        img {
+                            transform: scale(1.05);
+                        }
+                    }
+                    .blog-title {
+                        a {
+                            color: $color__dark__red;
+                        }
+                    }
+                }
+            }
+        }
+        .live-broadcust {
+            .item {
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba($color__dark__red, 0.8);
+                }
+
+                .play-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    i {
+                        color: $color__white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        position: relative;
+        .show-all {
+            margin-top: 20px;
+            text-align: center;
+
+            @include lg-devices {
+                margin-top: 0;
+            }
+            a {
+                color: $color__gray;
+                border: 1px solid $color__gray;
+                border-radius: 8px;
+                padding: 5px 20px;
+                font-size: 14px;
+                font-family: $font-almarai-reg;
+                display: inline-block;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $color__dark__red;
+                    color: $color__white;
+                    border-color: $color__dark__red;
+                }
+                @include lg-devices {
+                    position: absolute;
+                    left: 16px;
+                    top: 15px;
+                    font-size: 16px;
+                }
+                @include xl-devices {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

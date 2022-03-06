@@ -1,0 +1,183 @@
+footer {
+    .footer-top {
+        padding: 30px 0;
+
+        @include xl-devices {
+            padding: 40px 0;
+        }
+
+        .logos {
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+            @include xl-devices {
+                margin-top: 0;
+            }
+            a + a {
+                margin-right: 20px;
+                padding-right: 20px;
+                border-right: 4px solid #e1d5bf;
+
+                @include xl-devices {
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    border-width: 2px;
+                }
+                
+                @include xxl-devices {
+                    margin-right: 30px;
+                    padding-right: 30px;    
+                    border-width: 4px;                
+                }
+            }
+            img {
+                height: 70px;
+                @include sm-devices {
+                    height: 85px;
+                }
+                @include xl-devices {
+                    height: 75px;
+                }
+                @include xxl-devices {
+                    height: 100px;
+                }
+            }
+        }
+        .widgets {
+            gap: 30px 0;
+            .widget {
+                .widget-title {
+                    font-family: $font-almarai-bolder;
+                    font-size: 16px;
+                    color: $color__gray;
+                    margin-bottom: 10px;
+                    @include xxl-devices {
+                        font-size: 18px;
+                    }
+                    @include xxxl-devices {
+                        font-size: 20px;
+                    }
+                }
+                .btn-danger {
+                    background-color: $color__dark__red;
+                    box-shadow: none;
+                    font-size: 14px;
+                    padding: 8px 24px;
+                    font-family: $font-almarai-bold;
+                    border: 0;
+
+                    @include xxl-devices {
+                        font-size: 16px;
+                    }
+                    @include xxxl-devices {
+                        font-size: 18px;
+                    }
+                }
+                form {
+                    input {
+                        height: 40px;
+                        box-shadow: none;
+                        border: 0;
+                        min-width: 200px;
+                        max-width: 250px;
+                        @include sm-devices {
+                            min-width: 180px;
+                        }
+                        @include xl-devices {
+                            height: 44px;
+                        }
+                    }
+                    .btn {
+                        border-radius: 0;
+                        @include sm-devices {
+                            padding: 5px 10px;
+                        }
+                        @include xl-devices {
+                            padding: 5px 20px;
+                        }
+                    }
+                }
+                .contact-mail {
+                    display: inline-block;
+                    border: 2px solid $color__dark__red;
+                    color: $color__red;
+                    padding: 8px 15px;
+                    font-size: 16px;
+                }
+                .social-media {
+                    li {
+                        display: inline-block;
+                        & + li {
+                            margin-right: 10px;
+                        }
+                    }
+                    a {
+                        border: 2px solid $color__dark__red;
+                        padding: 2px;
+                        @include width-height(30px, 30px);
+                        border-radius: 50%;
+                        color: $color__dark__red;
+                        font-size: 15px;
+                        @include flex-center;
+                    }
+                }
+            }
+        }
+        .menu {
+            margin: 20px 0;
+            display: none;
+            @include xl-devices {
+                display: block;
+                margin-bottom: 0;
+            }
+            @include xxl-devices {
+                margin-top: 25px;
+            }
+            li {
+                @include sm-devices{
+                    display: inline-block;
+
+                }
+                & + li {
+                    @include sm-devices {
+                        border-right: 1px solid $color__gray;
+                    }
+                }
+                a {
+                    font-family: $font-almarai-bold;
+                    color: $color__gray;
+                    display: block;
+                    transition: all 0.3s;
+                    background-color: transparent;
+                    font-size: 14px;
+                    font-weight: 600;
+                    @include sm-devices {
+                        padding: 0 15px;
+                    }
+                    @include xl-devices {
+                        font-size: 16px;
+                    }
+                    @include xxxl-devices {
+                        font-size: 18px;
+                    }
+                    &:hover, &.active {
+                        color: $color__red;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 15px 0;
+        p {
+            font-family: $font-almarai-reg;
+            font-size: 15px;
+            color: $color__brown;
+            text-align: center;
+            @include xxl-devices {
+                font-size: 18px;
+                text-align: right;
+            }
+        }
+    }
+}
