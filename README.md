@@ -1,6 +1,4 @@
-# 👽 SHABAH-LAD3M-RTL 👇
-💥 SHABAH LAD3M RTL - Ministry of Youth And Sports Qatar Arabic Site Link 👇
-
+# 👽 SHABAH-LAD3M-RTL Project Preview 👇
 # Home Page
 https://freelancerhabibur.github.io/SHABAH-LAD3M-RTL
 
